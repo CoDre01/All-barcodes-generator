@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Barcode Generator App</title>
+  <link rel='stylesheet' href='/stylesheets/style.css'>
+</head>
+
+<body>
+    <h1>All Barcode Generator</h1>
+
+  <div class="row">
+    <div id="container">
+    <form action="/" method="post">
+      <label for="barcodeType">Select a barcode type: </label>
+      <select name="barcodeType">
+        <option value="code128">Code 128</option>
+        <option value="qrcode">QR Code</option>
+        <option value="ean13">EAN-13</option>
+        <option value="code39">Code 39</option>
+        <option value="itf">ITF (Interleaved 2 of 5)</option>
+        <option value="code93">Code 93</option>
+        <option value="ean8">EAN-8</option>
+        <option value="pdf417">PDF417</option>
+        <option value="datamatrix">Data Matrix</option>
+        <option value="aztec">Aztec Code</option>
+        <option value="maxicode">MaxiCode</option>
+        <option value="rss14">RSS-14</option>
+        <option value="rssexpanded">RSS Expanded</option>
+        <option value="upce">UPC-E</option>
+        <option value="code11">Code 11</option>
+        <option value="code93extended">Code 93 Extended</option>
+        <option value="msi">MSI (Modified Plessey)</option>
+        <option value="pharmacode">Pharmacode</option>
+        <option value="codabar">Codabar</option>
+        <option value="plessey">Plessey Code</option>
+        <option value="itf14">ITF-14</option>
+        <option value="microqrcode">Micro QR Code</option>
+        <option value="databar">GS1 DataBar</option>
+        <option value="databarexpanded">GS1 DataBar Expanded</option>
+        <option value="databarlimited">GS1 DataBar Limited</option>
+        <option value="postnet">POSTNET</option>
+        <option value="planet">PLANET</option>
+        <option value="uspsintelligentmail">USPS Intelligent Mail</option>
+        <option value="auspost">Australia Post</option>
+        <option value="royalmail">Royal Mail</option>
+        <option value="kix">KIX (dutch KIX Code)</option>
+        <option value="japanpost">Japan Post</option>
+        <option value="msiplessey">MSI Plessey</option>
+        <option value="telepen">Telepen</option>
+        <option value="eanvelocity">EAN Velocity</option>
+        <option value="uspsfacingidentificationmark">USPS Facing Identification Mark</option>
+        <option value="isbn">ISBN</option>
+        <option value="issn">ISSN</option>
+        <option value="ismn">ISMN</option>
+        <option value="dutchkix">Dutch KIX Code</option>
+        <option value="target">TARGET</option>
+        <option value="pzn">Pharmazentralnummer (PZN)</option>
+        <option value="circularcoupon">Circular Coupon</option>
+        <option value="flattermarken">Flattermarken</option>
+        <option value="rm4scc">RM4SCC</option>
+        <option value="postbar">PostBar</option>
+        <option value="canadianpost">Canadian Post</option>
+        <option value="micre13b">MICR E-13B</option>
+        <option value="hbfbarcode">HBF Barcode</option>
+        <option value="swisspostparcel">Swiss Post Parcel</option>
+        <option value="telecomitalia">Telecom Italia</option>
+        <option value="onecode">OneCode (4-State Customer Barcode)</option>
+        <option value="logmars">LOGMARS</option>
+        <option value="mscc13">MSCC-13</option>
+        <option value="postausgangsbuchbarcode">Postausgangsbuch Barcode</option>
+        <option value="vin">VIN (Vehicle Identification Number)</option>
+        <option value="debic2d">Debic 2D</option>
+        <option value="vicsbol">VICS BOL (Bill of Lading)</option>
+        <option value="ansiart">ANSI ART</option>
+        <option value="openean">Open EAN</option>
+        <option value="scc14">SCC-14</option>
+        <option value="securpharm">SecurPharm</option>
+        <option value="swedishpostal">Swedish Postal</option>
+        <option value="daft">DAFT (Dutch Association for the Automatic Identification of Art and Collectibles)</option>
+        <option value="upnqr">UPNQR (Ukrainian Postal Numeric Code)</option>
+        <option value="barfly">Barfly</option>
+        <option value="bokode">Bokode</option>
+        <option value="posicode">PosiCode</option>
+        <option value="pzn8">PZN-8</option>
+        <option value="pznx">PZN-X</option>
+        <option value="cpack">CPack</option>
+        <option value="swissqrcode">Swiss QR Code</option>
+        <option value="kode128">Kode128</option>
+        <option value="datalogic2of5">Datalogic 2 of 5</option>
+        <option value="datalogic3of9">Datalogic 3 of 9</option>
+        <option value="datalogic128">Datalogic 128</option>
+        <option value="datalogiccodabar">Datalogic Codabar</option>
+        <option value="datalogicindustrial2of5">Datalogic Industrial 2 of 5</option>
+        <option value="datalogicmatrix">Datalogic Matrix</option>
+        <option value="datalogicmsi">Datalogic MSI</option>
+        <option value="datalogicplessey">Datalogic Plessey</option>
+        <option value="datalogictelepen">Datalogic Telepen</option>
+        <option value="datalogicukpostal">Datalogic UK Postal</option>
+        <option value="hongkong2of5">Hong Kong 2 of 5</option>
+        <option value="iata2of5">IATA 2 of 5</option>
+        <option value="itf6">ITF-6</option>
+        <option value="matrix2of5">Matrix 2 of 5</option>
+        <option value="uspssacklabel">USPS Sack Label</option>
+        <option value="uspstraylabel">USPS Tray Label</option>
+        <option value="code32">Code 32</option>
+        <option value="danishpostal">Danish Postal</option>
+        <option value="gs1datamatrix">GS1 DataMatrix</option>
+        <option value="micropdf417">MicroPDF417</option>
+        <option value="posti">Posti</option>
+        <option value="swisspostfinance">Swiss PostFinance</option>
+        <option value="ukrainefastparcel">Ukraine Fast Parcel</option>
+        <option value="danskpost">Dansk Post</option>
+        <option value="royalmailmailmark">Royal Mail Mailmark</option>
+        <option value="australiaposteparcel">Australia Post eParcel</option>
+        <option value="austrianpost">Austrian Post</option>
+        <option value="dpleopard">DP LEOPARD</option>
+        <option value="hibcaztec">HIBC Aztec</option>
+        <option value="hibccodablockf">HIBC Codablock F</option>
+        <option value="hibcdatamatrix">HIBC Datamatrix</option>
+        <option value="hibcdatabar">HIBC Databar</option>
+        <option value="hibcmicropdf">HIBC MicroPDF</option>
+        <option value="hibcpdf417">HIBC PDF417</option>
+        <option value="hibcqrCode">HIBC QR Code</option>
+        <option value="koreapost">Korea Post</option>
+        <option value="postnet24">Postnet 24</option>
+        <option value="pzn7">PZN-7</option>
+        <option value="qrcodemicro">QR Code Micro</option>
+        <option value="vietnamesepostal">Vietnamese Postal</option>
+        <option value="uspsintelligentmailpackagebarcode">USPS Intelligent Mail Package Barcode</option>
+      </select>
+      <br>
+      <br>
+      <label for="barcodeText">Enter your text: </label>
+      <input type="text" name="barcodeText" id="barcodeText" required>
+      {{#if errMessage}}
+        <p id="errMessage">{{errMessage}}</p>
+      {{/if}}
+      <br><br>
+      <div class="inputFlex">
+      <label for="backgroundColor">Select background colour: </label>
+      <input type="color" name="backgroundColor" value="#dcdbdc" id="backgroundColor">
+      </div>
+      <br>
+      <div class="inputFlex">
+      <label for="color">Select Image colour:</label>
+      <input type="color" name="color" id="color">
+      </div>
+      <br>
+      <div class="inputFlex">
+      <label for="scale">Set size of image:</label>
+      <input type="number" name="scale" id="scale" min="1" max="5"><br>
+      </div>
+      <br>
+      <button type="submit" value="Submit" id="submitBtn">Submit</button>
+    </form>
+  </div>
+
+  {{#if png}}
+  <div id="imageContainer">
+    <img src={{png}} alt="Barcode Image"><br>
+    <a href={{png}} download><button>Download Barcode Image</button></a>
+  </div>
+  {{else}}
+     
+  {{/if}}
+  </div>
+</body>
+
+</html>

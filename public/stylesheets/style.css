@@ -1,0 +1,166 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font: 16px sans-serif;
+  height: 100vh;
+  background: gainsboro;
+}
+
+h1 {
+  color: #4D4A4B;
+  text-align: center;
+  font-size: 60px;
+}
+.row{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#container{
+  min-width: 400px;
+  max-width: 600px;
+  height: 400px;
+  background: #c4baf4;
+  margin-top: 30px;
+  margin-left: 20px;
+  border: 0;
+  outline: 0;
+  border-radius: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+form{
+  text-align: left;
+  padding: 25px;
+}
+
+#imageContainer{
+  min-width: 400px;
+  max-width: 600px;
+  height: 400px;
+  background: #c4baf4;
+  margin-top: 30px;
+  margin-left: 20px;
+  border: 0;
+  outline: 0;
+  border-radius: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  flex-basis: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#color{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 50px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+#color::-webkit-color-swatch {
+  border-radius: 15px;
+  border: none;
+}
+
+#color::-moz-color-swatch {
+  border-radius: 15px;
+  border: none;
+}
+
+#backgroundColor{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 50px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+#backgroundColor::-webkit-color-swatch {
+  border-radius: 15px;
+  border: none;
+}
+#backgroundColor::-moz-color-swatch {
+  border-radius: 15px;
+  border: none;
+}
+#barcodeText{
+  font-size: 16px;
+  padding-left: 5px;
+}
+
+#barcodeText, select{
+  width: 250px;
+  height: 30px;
+  border: 0;
+  outline: 0;
+  background-color: aliceblue;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+#scale{
+  width: 50px;
+  height: 30px;
+  border: 0;
+  outline: 0;
+  background-color: aliceblue;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+label, input{
+  display: inline-block;
+  flex-direction: row;
+}
+option{
+  height: 25px;
+  max-width: 200px;
+  position: absolute;
+  right: 20%;
+}
+
+#submitBtn{
+  margin: 0 auto;
+}
+button{
+  width: fit-content;
+  padding: 10px 25px;
+  border: 0;
+  outline: 0;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  color: whitesmoke;
+  background: #0E008C;
+}
+
+.inputFlex{
+  display: flex;
+  align-items: center;
+}
+
+img{
+  padding: 10px 25px;
+}
+
+#errMessage{
+  color: #FF0000;
+  font-size: 14px;
+  font-weight: 600;
+}
